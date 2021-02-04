@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src ="js/script.js"></script>
+	
+</head>
+<body>
+
+<div class="flex-container">
+	<div id="contenedorInicio" class="visible">
+		<div class="titleContador"><h1>Contador de Truco</h1>
+		</div>
+		<div class="teamNameBox">
+			<input id="team1In" class="nombreEquipo" type="text" placeholder="Equipo 1" />
+			<input id="team2In" class="nombreEquipo" type="text" placeholder="Equipo 2" />
+		</div>
+		<div class="modeSelectBox">
+			
+			<input id="modeA" class="modeSelect borderWhite" type="button" value="a 24" />
+			<input id="modeB" class="modeSelect borderWhite" type="button" value="a 30" />
+		</div>	
+		<div class="startButtonBox">
+			<div class="startButtonSelect">
+			</div>
+			<input id="start" class="startButtonSelect borderWhite" type="button" value="Iniciar" />
+		</div>
+	</div>
+	<div id="contenedorTablero" class="invisible">
+		<div class="equiposTablero">
+			<div class="item"><input id="btnPlusT1" class="btnPlusMinus" type="button" value="+" />
+			</div>
+			<div class="item equipoAcolor" id="teamName1"><h1>Equipo 1</h1>
+			</div>
+			<div class="item equipoBcolor" id="teamName2"><h1>Equipo 2</h1>
+			</div>
+			<div class="item"><input id="btnPlusT2" class="btnPlusMinus" type="button" value="+" />
+			</div>
+		</div>
+		<div class="palitosUp">
+			<div class="palitosItem bordeLateralIzq" id="p1Up">
+				<div class="sticks"><img id="imgA1" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgA2" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgA3" src="img/0.png"></img>
+				</div>
+			</div>
+			<div class="palitosItem bordeLateralDer" id="p2Up">
+				<div class="sticks"><img id="imgB1" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgB2" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgB3" src="img/0.png"></img>
+				</div>			
+			</div>
+		</div>
+		<div class="palitosDown">
+			<div class="palitosItem bordeLateralIzq" id="p1Down">
+				<div class="sticks"><img id="imgA4" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgA5" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgA6" src="img/0.png"></img>
+				</div>			
+			</div>
+			<div class="palitosItem bordeLateralDer" id="p2Down">
+				<div class="sticks"><img id="imgB4" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgB5" src="img/0.png"></img>
+				</div>
+				<div class="sticks"><img id="imgB6" src="img/0.png"></img>
+				</div>			
+			</div>
+		</div>
+
+
+		<div id="numToFinish"><h3></h3>
+		</div>
+		<div class="equiposTablero2">
+			<div class="item2"><input id="btnMinusT1" class="btnPlusMinus" type="button" value="-" />
+			</div>
+			<div class="item2" id="teamScore1"><h1>0</h1>
+			</div>
+			<div class="item2 goalBox" id="goal"><h2 class="borderWhite endButton">Fin</h2>
+			</div>
+			<div class="item2" id="teamScore2"><h1>0</h1>
+			</div>
+			<div class="item2"><input id="btnMinusT2" class="btnPlusMinus" type="button" value="-" />
+			</div>
+		</div>
+	</div>
+
+
+	
+</div>
+</body>
+
+</html>
